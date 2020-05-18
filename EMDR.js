@@ -7,7 +7,8 @@ canvas.height = window.innerHeight;
 var c = canvas.getContext('2d');
 
 var x = Math.random() * innerWidth;
-var y = Math.random() * innerHeight;
+//var y = Math.random() * innerHeight;
+var y = 500;
 var dx = (Math.random() - 0) * 3;  // changing the final number changes speed
 //var dy = (Math.random() - 0) * 8;
 var radius = 25;
@@ -25,9 +26,9 @@ function animate() {
     if (x + radius > innerWidth || x - radius < 0) {
         dx = -dx;
     }
-    if (y + radius > innerHeight || y - radius < 0) {
+    /*if (y + radius > innerHeight || y - radius < 0) {
         dy = -dy;
-    }
+    }*/
     x += dx;
    // y += dy;
 }

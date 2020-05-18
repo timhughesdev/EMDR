@@ -1,24 +1,12 @@
-/* 
-redesign style for h1
-move it so it is on the canvas 
-center it 
-*/ 
+#canvas-wrap {
+    z-index: 1;
+    align-items: center;
+}
 
-#wrapper {position: relative;  }
-#canvas-wrap { position:relative } /* Make this a positioned parent */
-#overlay     { position:absolute; top:20px; left:30px; }
-
-
+#overlay {
+    position: absolute;
+    align-items: center;
+    text-align: center;
 
 
-
-
-
-
-/*<div id="wrapper">
-    <div style="position: absolute; left: 10px; top: 10ps; width:200px; 
-    height:100px;>
-    abcd
-    </div> 
-    <div style="position: absolute; z-index: 0; left: 50px; top: 20px;
-    width: 100px height: 20px";     */
+}
