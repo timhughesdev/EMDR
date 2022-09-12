@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<HTML LANG="EN">
-    <head> 
-        <meta charset="UTF-8">
-        <title>EMDR</title>
-        <link href="index.css" rel="stylesheet" type="text/css">
-        <div id="canvas-wrap">
-            <canvas></canvas>
-            <h1 id="overlay">Eye movement desensitization and reprocessing</h1>
-        </div>
-        <style type="text/css">
-            canvas {
-                border: 1px solid black;
-                position: fixed;
-                background: rgb(39, 118, 163);
-            }
-            body {
-                margin: 0;
+<html lang="EN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>EMDR</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <div id="canvas-wrap">
+      <canvas></canvas>
+      <h1 id="overlay">Eye movement desensitization and reprocessing</h1>
+    </div>
 
-                
-            }
-            </style>
-            <
-        </head>
-    <body> 
-        <!-- <canvas>Eye movement desensitization and reprocessing</canvas> !-->
-        <script src="emdr.js"></script>
-        
-         
-    
-    </body>
-</HTML>
+    <div class="range">
+      <div class="sliderValue">
+        <span>50</span>
+      </div>
+      <div class="field">
+        <div class="value left">0</div>
+        <input
+          type="range"
+          id="myRange"
+          min="1"
+          max="10"
+          value="5"
+          steps="10"
+        />
+        <div class="value right">100</div>
+      </div>
+    </div>
 
+    <style type="text/css">
+      canvas {
+        border: 1px solid black;
+        position: fixed;
+        background: rgb(39, 118, 163);
+      }
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <canvas>Eye movement desensitization and reprocessing</canvas> !-->
+    <script src="emdr.js"></script>
+  </body>
+</html>
