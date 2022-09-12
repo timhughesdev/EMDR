@@ -32,6 +32,10 @@ function animate() {
 }
 animate();
 
+// Slider //
+// Slider //
+// Slider //
+
 const slideValue = document.querySelector("span");
 const inputSlider = document.querySelector("input");
 inputSlider.oninput = () => {
@@ -44,3 +48,7 @@ inputSlider.oninput = () => {
 inputSlider.onblur = () => {
   slideValue.classList.remove("show");
 };
+
+// Slider //
+// Slider //
+// Slider //
