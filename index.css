@@ -48,8 +48,8 @@ input {
   position: absolute;
   top: 200px;
   bottom: 0;
-  left: 500px;
-  right: 0;
+  margin-left: 40%;
+  margin-right: 60%;
   z-index: 2222;
   height: 80px;
   width: 380px;
@@ -58,15 +58,15 @@ input {
   padding: 0 65px 0 45px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
-.sliderValue {
+.range .sliderValue {
   position: relative;
   width: 110%;
 }
-.sliderValue span {
+.range .sliderValue span {
   position: absolute;
   height: 45px;
   width: 45px;
-  transform: translateX(-70%) scale(1);
+  transform: translateX(-50%) scale(0);
   font-weight: 500;
   top: -40px;
   line-height: 55px;
@@ -75,44 +75,44 @@ input {
   transform-origin: bottom;
   transition: transform 0.3s ease-in-out;
 }
-.sliderValue span.show {
-  transform: translateX(-70%) scale(1);
+.range .sliderValue span.show {
+  transform: translateX(-50%) scale(0);
 }
-.sliderValue span:after {
+.range .sliderValue span:after {
   position: absolute;
   content: "";
-  height: 100%;
-  width: 100%;
+  height: 45px;
+  width: 45px;
   background: #664aff;
   border: 3px solid #fff;
   z-index: -1;
   left: 50%;
   transform: translateX(-50%) rotate(45deg);
   border-bottom-left-radius: 50%;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
 }
-.field {
+.range .field {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
-  position: relative;
 }
-.field .value {
+.range .field .value {
   position: absolute;
   font-size: 18px;
   color: #664aff;
   font-weight: 600;
 }
-.field .value.left {
-  left: -10px;
+.range .field .value.left {
+  left: -22px;
 }
 .field .value.right {
   right: -43px;
 }
-.range input {
+.range .field input {
   -webkit-appearance: none;
   width: 100%;
   height: 3px;
